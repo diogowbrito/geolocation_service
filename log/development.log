@@ -1,0 +1,157 @@
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (232.4ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (34.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (98.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.8ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (1.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (2.0ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (57.3ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (7.2ms)[0m  CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+Mysql2::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+Mysql2::Error: Table 'campus' already exists: CREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (47.6ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW KEYS FROM schema_migrations[0m
+  [1m[35mSQL (43.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (1.0ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (2.9ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (28.9ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.7ms)[0m  CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+Mysql2::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+  [1m[36mSQL (132.9ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (168.6ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (37.9ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (0.8ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+Mysql2::Error: Table 'campus' already exists: CREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mCampus Load (1.0ms)[0m  [1mselect * from campus where OGR_FID='4'[0m
+  [1m[35mCampus Columns (3.3ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mCampus Load (0.5ms)[0m  [1mselect name from campus where OGR_FID='4'[0m
+  [1m[35mCampus Load (6.3ms)[0m  select name from campus where OGR_FID='4'
+  [1m[36mCampus Load (0.5ms)[0m  [1mselect description from campus where OGR_FID='4'[0m
+  [1m[36mSQL (2.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (95.7ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (51.4ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (19.5ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+Mysql2::Error: Table 'campus' already exists: CREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.8ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (184.9ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (35.4ms)[0m  CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+Mysql2::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (0.9ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+Mysql2::Error: Table 'campus' already exists: CREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (0.9ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (58.8ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.7ms)[0m  CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+Mysql2::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (46.7ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW KEYS FROM schema_migrations[0m
+  [1m[35mSQL (66.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (0.9ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.6ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (36.5ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.2ms)[0m  CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+Mysql2::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+  [1m[36mSQL (0.9ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (52.6ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.1ms)[0m  CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+Mysql2::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_campus_on_wkb_geometry ON campus (wkb_geometry)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (0.8ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+Mysql2::Error: Table 'campus' already exists: CREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (0.9ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (21.2ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35mSQL (0.9ms)[0m  CREATE SPATIAL INDEX index_campus_on_shape ON campus (shape)
+Mysql2::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_campus_on_shape ON campus (shape)
+  [1m[36mSQL (0.9ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.1ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (1.7ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (20.0ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35mSQL (1.0ms)[0m  CREATE SPATIAL INDEX index_campus_on_shape ON campus (shape)
+Mysql2::Error: The used table type doesn't support SPATIAL indexes: CREATE SPATIAL INDEX index_campus_on_shape ON campus (shape)
+  [1m[36mSQL (0.7ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mschema_migrations Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `schema_migrations`[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+Migrating to CreateCampus (20110526170311)
+  [1m[36mSQL (0.9ms)[0m  [1mCREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255)) ENGINE=InnoDB[0m
+Mysql2::Error: Table 'campus' already exists: CREATE TABLE `campus` (`ogr_fid` int(11), `shape` GEOMETRY, `name` varchar(255), `description` varchar(255)) ENGINE=InnoDB
+  [1m[36mCampus Columns (2.1ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+  [1m[35mSQL (18.7ms)[0m  SELECT COUNT(*) FROM `campus`
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `campus`[0m
+  [1m[35mCampus Load (3.2ms)[0m  select * from campus where OGR_FID=2
+  [1m[36mCampus Load (0.8ms)[0m  [1mselect name from campus where OGR_FID=2[0m
+  [1m[35mCampus Load (0.5ms)[0m  select name from campus where OGR_FID=4
+  [1m[36mCampus Load (1.0ms)[0m  [1mselect name from campus where OGR_FID=8[0m
+  [1m[35mCampus Load (1.5ms)[0m  select name from campus where OGR_FID=12
+  [1m[36mCiti Load (0.6ms)[0m  [1mselect name from campus where OGR_FID=12[0m
+  [1m[35mCiti Columns (3.9ms)[0m  SHOW FIELDS FROM `citis`
+  [1m[36mCiti Load (0.7ms)[0m  [1mselect name from citis where OGR_FID=12[0m
+  [1m[35mCiti Load (0.5ms)[0m  select name from citis where OGR_FID=3
+  [1m[36mCiti Load (0.6ms)[0m  [1mselect name from citis where OGR_FID=1[0m
+  [1m[35mCiti Load (0.6ms)[0m  select description from citis where OGR_FID=1
+  [1m[36mEdi Load (1.3ms)[0m  [1mselect name from edis where OGR_FID=1[0m
+  [1m[35mEdi Load (0.2ms)[0m  select name from edis where OGR_FID=1
+  [1m[36mEdi Load (0.3ms)[0m  [1mselect name from edis where OGR_FID=1[0m
+  [1m[35mEdi Columns (1.6ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (1.2ms)[0m  [1mselect name from edis where OGR_FID=4[0m
+  [1m[35mEdi Load (0.6ms)[0m  select name from edis where OGR_FID=40
+  [1m[36mEdii Columns (1.8ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+  [1m[35mSQL (9.1ms)[0m  SHOW TABLES
+  [1m[36mEdii Load (0.6ms)[0m  [1mselect name from ediis where OGR_FID=3[0m
+  [1m[35mEdiv Load (0.9ms)[0m  select name from edivs where OGR_FID=3
+  [1m[36mEdiv Columns (2.3ms)[0m  [1mSHOW FIELDS FROM `edivs`[0m
+  [1m[35mEdiv Load (0.5ms)[0m  select name from edivs
+  [1m[36mEdiv Load (1.2ms)[0m  [1mselect id, name from edivs[0m
+Mysql2::Error: Unknown column 'id' in 'field list': select id, name from edivs
+  [1m[35mEdiv Load (1.1ms)[0m  select ogr_fid, name from edivs
+  [1m[36mEdiv Load (38.9ms)[0m  [1mselect ogr_fid from edivs[0m
