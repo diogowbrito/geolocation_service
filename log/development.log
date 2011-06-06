@@ -427,3 +427,1099 @@ ActionController::RoutingError (No route matches "/services/people/index"):
   
 
 Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/mapa/ed3/3" for 127.0.0.1 at 2011-06-06 08:19:09 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ed3", "room"=>"3"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (3.0ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mapa/?building=%22ED.I%22&?roomt=%223%22" for 127.0.0.1 at 2011-06-06 08:24:05 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"\"ED.I\"", "?roomt"=>"\"3\""}
+Rendered locations/get_location_map_from_name.erb within layouts/application (3.7ms)
+Completed 200 OK in 20ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mapa/?building=ED.I&?room=3" for 127.0.0.1 at 2011-06-06 08:24:29 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "?room"=>"3"}
+  [1m[36mEdi Columns (349.2ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mSQL (139.9ms)[0m  SHOW TABLES
+  [1m[36medis Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (58.9ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` IS NULL LIMIT 1
+Rendered locations/get_location_map_from_name.erb within layouts/application (3.4ms)
+Completed 200 OK in 985ms (Views: 15.5ms | ActiveRecord: 549.1ms)
+
+
+Started GET "/mapa/?building=ED.I&?room=3" for 127.0.0.1 at 2011-06-06 08:53:53 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "?room"=>"3"}
+  [1m[36mEdi Columns (22.7ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (2.2ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.3ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` IS NULL LIMIT 1[0m
+Completed   in 66ms
+
+NoMethodError (undefined method `description' for nil:NilClass):
+  app/controllers/locations_controller.rb:68:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started GET "/mapa/?building=ED.I&?room=209A" for 127.0.0.1 at 2011-06-06 08:53:59 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "?room"=>"209A"}
+  [1m[35mEdi Columns (1.3ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (0.9ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.2ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` IS NULL LIMIT 1
+Completed   in 28ms
+
+NoMethodError (undefined method `description' for nil:NilClass):
+  app/controllers/locations_controller.rb:68:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/mapa/?building=ED.I&?room=209A" for 127.0.0.1 at 2011-06-06 08:54:33 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "?room"=>"209A"}
+  [1m[36mEdi Columns (1.5ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (1.1ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.2ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` IS NULL LIMIT 1[0m
+Rendered locations/get_location_map_from_name.erb within layouts/application (8.4ms)
+Completed 200 OK in 71ms (Views: 51.6ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/mapa/?building=ED.I&?room=209A" for 127.0.0.1 at 2011-06-06 08:54:50 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "?room"=>"209A"}
+  [1m[35mEdi Columns (1.3ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (0.9ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.3ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` IS NULL LIMIT 1
+Rendered locations/get_location_map_from_name.erb within layouts/application (3.5ms)
+Completed 200 OK in 39ms (Views: 10.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/mapa/?building=ED.I&?room=209A" for 127.0.0.1 at 2011-06-06 08:56:05 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "?room"=>"209A"}
+  [1m[36mEdi Columns (1.7ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (2.0ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.3ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` IS NULL LIMIT 1[0m
+Rendered locations/get_location_map_from_name.erb within layouts/application (3.8ms)
+Completed 200 OK in 58ms (Views: 12.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 08:56:42 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (1.5ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.6ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (26.8ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Rendered locations/get_location_map_from_name.erb within layouts/application (4.9ms)
+Completed 200 OK in 100ms (Views: 12.6ms | ActiveRecord: 29.9ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 08:56:55 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (9.6ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (16.1ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (5.9ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Rendered locations/get_location_map_from_name.erb within layouts/application (9.5ms)
+Completed 200 OK in 138ms (Views: 44.1ms | ActiveRecord: 31.5ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 09:01:48 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (1.8ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.2ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 23ms
+
+TypeError (can't convert nil into String):
+  app/controllers/locations_controller.rb:32:in `+'
+  app/controllers/locations_controller.rb:32:in `writeToFile'
+  app/controllers/locations_controller.rb:67:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 09:05:49 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (6.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (3.4ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (4.6ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 49ms
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/locations_controller.rb:27:in `writeToFile'
+  app/controllers/locations_controller.rb:69:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (22.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.7ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 09:08:08 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (1.5ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.2ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 27ms
+
+TypeError (can't convert nil into String):
+  app/controllers/locations_controller.rb:33:in `+'
+  app/controllers/locations_controller.rb:33:in `writeToFile'
+  app/controllers/locations_controller.rb:69:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+  [1m[36mEdi Load (50.3ms)[0m  [1mselect * from edis where ogr_fid=1[0m
+  [1m[35mEdi Columns (27.2ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (1.4ms)[0m  [1mselect shape from edis where ogr_fid=1[0m
+  [1m[35mEdi Load (0.3ms)[0m  select shape from edis where ogr_fid=1
+  [1m[36mEdi Load (0.5ms)[0m  [1mselect SHAPE from edis where ogr_fid=1[0m
+  [1m[35mEdi Load (0.4ms)[0m  select * from edis where ogr_fid=1
+  [1m[36mSQL (1.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35medis Columns (1.5ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.3ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 09:22:38 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (1.5ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.3ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Rendered locations/get_location_map_from_name.erb within layouts/application (2.9ms)
+Completed 200 OK in 40ms (Views: 12.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:02:51 -0700
+
+SyntaxError (/home/alaxid/Desktop/PI/geolocation_service/app/controllers/locations_controller.rb:80: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    @return uploaded_file.url
+                         ^):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.5ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:05:24 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (536.3ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.5ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.4ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 690ms
+
+LoadError (no such file to load -- dropbox):
+  app/controllers/locations_controller.rb:59:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.4ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.5ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:05:54 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.5ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (3.4ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.6ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 182ms
+
+NameError (uninitialized constant LocationsController::Dropbox):
+  app/controllers/locations_controller.rb:63:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:09:10 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (53.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mSQL (170.6ms)[0m  SHOW TABLES
+  [1m[36medis Columns (6.9ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.3ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 1699ms
+
+Errno::ENOENT (No such file or directory - -b):
+  app/controllers/locations_controller.rb:68:in `gets'
+  app/controllers/locations_controller.rb:68:in `gets'
+  app/controllers/locations_controller.rb:68:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (132.7ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:09:46 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.7ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (1.6ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.3ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 1060ms
+
+OAuth::Unauthorized (403 Forbidden):
+  app/controllers/locations_controller.rb:69:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:12:20 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (4.6ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.2ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 41ms
+
+NameError (undefined local variable or method `settings' for #<LocationsController:0x94eca88>):
+  app/controllers/locations_controller.rb:63:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:12:35 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (7.4ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (14.1ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.2ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 1318ms
+
+OAuth::Unauthorized (403 Forbidden):
+  app/controllers/locations_controller.rb:69:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:12:48 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (1.4ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.3ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 1001ms
+
+OAuth::Unauthorized (403 Forbidden):
+  app/controllers/locations_controller.rb:68:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:96:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:12:57 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (7.4ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (5.6ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.4ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 1805ms
+
+Dropbox::UnsuccessfulResponseError (HTTP status Net::HTTPUnauthorized received: http://api-content.dropbox.com/0/files/sandbox):
+  app/controllers/locations_controller.rb:72:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:96:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (46.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.1ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:15:12 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (2.5ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.4ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 1526ms
+
+Dropbox::UnsuccessfulResponseError (HTTP status Net::HTTPUnauthorized received: http://api-content.dropbox.com/0/files/sandbox):
+  app/controllers/locations_controller.rb:73:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.6ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:15:23 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.2ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (7.5ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.2ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 1460ms
+
+Dropbox::UnsuccessfulResponseError (HTTP status Net::HTTPUnauthorized received: http://api-content.dropbox.com/0/files/dropbox):
+  app/controllers/locations_controller.rb:73:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:15:41 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (10.0ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (1.4ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 1247ms
+
+OAuth::Unauthorized (403 Forbidden):
+  app/controllers/locations_controller.rb:69:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (29.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.8ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:15:51 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.8ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (1.3ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.2ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 6263ms
+
+NoMethodError (undefined method `url' for #<Dropbox::Entry testefile.kml>):
+  app/controllers/locations_controller.rb:78:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.4ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:17:54 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (1.8ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.2ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 5680ms
+
+Dropbox::FileNotFoundError (Dropbox::FileNotFoundError: public/testefile.kml):
+  app/controllers/locations_controller.rb:76:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:18:17 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.9ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (3.6ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (3.3ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 5196ms
+
+NoMethodError (undefined method `url' for #<Dropbox::Entry testefile.kml>):
+  app/controllers/locations_controller.rb:78:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:97:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.8ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:19:59 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (1.5ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.2ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.3ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 6103ms
+
+NameError (undefined local variable or method `testefile' for #<LocationsController:0x939d40c>):
+  app/controllers/locations_controller.rb:73:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:90:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:20:18 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.2ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (0.9ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (3.0ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 4775ms
+
+NoMethodError (undefined method `kml' for #<Dropbox::Entry testefile.kml>):
+  app/controllers/locations_controller.rb:73:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:90:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.8ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:21:55 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (1.7ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.6ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.2ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 4171ms
+
+Errno::ENOENT (No such file or directory - file_name.kml):
+  app/controllers/locations_controller.rb:69:in `upload_file_to_dropbox'
+  app/controllers/locations_controller.rb:90:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:22:35 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.7ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (1.1ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.2ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Rendered locations/get_location_map_from_name.erb within layouts/application (2.9ms)
+Completed 200 OK in 5668ms (Views: 45.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:31:39 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (217.7ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.7ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (1.0ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Rendered locations/get_location_map_from_name.erb within layouts/application (2.8ms)
+Completed 200 OK in 5755ms (Views: 111.1ms | ActiveRecord: 220.4ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:42:15 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.8ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (1.0ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (0.2ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Completed   in 59ms
+
+NoMethodError (undefined method `each' for #<Edi:0x8cf6658>):
+  app/controllers/locations_controller.rb:101:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:42:55 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+Completed   in 26ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/locations_controller.rb:85:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.3ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:43:16 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+Completed   in 12ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/locations_controller.rb:85:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.6ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:44:19 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+Completed   in 14ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/locations_controller.rb:85:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.7ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:44:27 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+Completed   in 18ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/locations_controller.rb:85:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.6ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:45:12 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Load (243.3ms)[0m  SELECT * from EDIS where name = '209A'
+Mysql2::Error: Table 'geolocation_development.EDIS' doesn't exist: SELECT * from EDIS where name = '209A'
+Completed   in 296ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Table 'geolocation_development.EDIS' doesn't exist: SELECT * from EDIS where name = '209A'):
+  app/controllers/locations_controller.rb:85:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:45:25 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Load (148.3ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (1.7ms)[0m  SHOW FIELDS FROM `edis`
+Completed   in 219ms
+
+NameError (undefined local variable or method `room' for #<LocationsController:0x93c766c>):
+  app/controllers/locations_controller.rb:103:in `block in get_location_map_from_name'
+  app/controllers/locations_controller.rb:102:in `each'
+  app/controllers/locations_controller.rb:102:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.0ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:45:42 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Load (14.5ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (35.4ms)[0m  SHOW FIELDS FROM `edis`
+Completed   in 103ms
+
+NameError (undefined local variable or method `room' for #<LocationsController:0x953a864>):
+  app/controllers/locations_controller.rb:103:in `block in get_location_map_from_name'
+  app/controllers/locations_controller.rb:102:in `each'
+  app/controllers/locations_controller.rb:102:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.3ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:45:45 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Load (0.3ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (1.2ms)[0m  SHOW FIELDS FROM `edis`
+Completed   in 6351ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/controllers/locations_controller.rb:104:in `block in get_location_map_from_name'
+  app/controllers/locations_controller.rb:102:in `each'
+  app/controllers/locations_controller.rb:102:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 10:47:06 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Load (0.3ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (1.4ms)[0m  SHOW FIELDS FROM `edis`
+Rendered locations/get_location_map_from_name.erb within layouts/application (3.8ms)
+Completed 200 OK in 5795ms (Views: 62.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 11:29:57 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Load (0.7ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (85.0ms)[0m  SHOW FIELDS FROM `edis`
+Completed   in 5864ms
+
+NoMethodError (undefined method `path=' for #<Edi:0x921335c>):
+  app/controllers/locations_controller.rb:102:in `block in get_location_map_from_name'
+  app/controllers/locations_controller.rb:100:in `each'
+  app/controllers/locations_controller.rb:100:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (18.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (43.6ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (108.5ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 11:32:40 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Load (20.5ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (1.4ms)[0m  SHOW FIELDS FROM `edis`
+Rendered locations/get_location_map_from_name.xml.builder (290.3ms)
+Completed   in 5943ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: xml.list(:title => "Maps") do
+    4:   @locations.each do |location|
+    5:     xml.item(@location.name, :title => "Mapa", :href => @location.description)
+    6:   end
+    7: end
+  app/views/locations/get_location_map_from_name.xml.builder:5:in `block (2 levels) in _app_views_locations_get_location_map_from_name_xml_builder__251589651_86044860_91917326'
+  app/views/locations/get_location_map_from_name.xml.builder:4:in `each'
+  app/views/locations/get_location_map_from_name.xml.builder:4:in `block in _app_views_locations_get_location_map_from_name_xml_builder__251589651_86044860_91917326'
+  app/views/locations/get_location_map_from_name.xml.builder:3:in `_app_views_locations_get_location_map_from_name_xml_builder__251589651_86044860_91917326'
+  app/controllers/locations_controller.rb:105:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.4ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.1ms)
+
+
+Started GET "/mapa?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 11:33:40 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Load (18.6ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (1.2ms)[0m  SHOW FIELDS FROM `edis`
+Rendered locations/get_location_map_from_name.xml.builder (6.5ms)
+Completed 200 OK in 4962ms (Views: 11.6ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/mapa?building=ED.I" for 127.0.0.1 at 2011-06-06 12:35:12 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I"}
+  [1m[36mEdi Load (391.5ms)[0m  [1mSELECT * from edis where name = NULL[0m
+Rendered locations/get_location_map_from_name.xml.builder (7.1ms)
+Completed 200 OK in 508ms (Views: 12.6ms | ActiveRecord: 391.5ms)
+
+
+Started GET "/mapa/?building=ED.I&room=*" for 127.0.0.1 at 2011-06-06 12:35:44 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I", "room"=>"*"}
+  [1m[35mEdi Load (47.3ms)[0m  SELECT * from edis where name = '*'
+Rendered locations/get_location_map_from_name.xml.builder (20.1ms)
+Completed 200 OK in 100ms (Views: 26.5ms | ActiveRecord: 47.3ms)
+
+
+Started GET "/mapa/?building=ED.I&room=*" for 127.0.0.1 at 2011-06-06 12:35:46 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I", "room"=>"*"}
+  [1m[36mEdi Load (0.3ms)[0m  [1mSELECT * from edis where name = '*'[0m
+Rendered locations/get_location_map_from_name.xml.builder (10.5ms)
+Completed 200 OK in 70ms (Views: 40.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/mapa/?building=ED.I&room=%27*%27" for 127.0.0.1 at 2011-06-06 12:35:49 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I", "room"=>"'*'"}
+  [1m[35mEdi Load (17.0ms)[0m  SELECT * from edis where name = '\'*\''
+Rendered locations/get_location_map_from_name.xml.builder (8.6ms)
+Completed 200 OK in 85ms (Views: 13.9ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/mapa/?building=ED.I&room=209" for 127.0.0.1 at 2011-06-06 12:35:54 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209"}
+  [1m[36mEdi Load (1.3ms)[0m  [1mSELECT * from edis where name = '209'[0m
+  [1m[35mEdi Columns (85.8ms)[0m  SHOW FIELDS FROM `edis`
+Rendered locations/get_location_map_from_name.xml.builder (7.1ms)
+Completed 200 OK in 8660ms (Views: 13.9ms | ActiveRecord: 87.1ms)
+
+
+Started GET "/mapa/?building=ED.I&room=sfaf" for 127.0.0.1 at 2011-06-06 12:36:10 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I", "room"=>"sfaf"}
+  [1m[36mEdi Load (1.2ms)[0m  [1mSELECT * from edis where name = 'sfaf'[0m
+Rendered locations/get_location_map_from_name.xml.builder (7.1ms)
+Completed 200 OK in 53ms (Views: 16.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/mapa/?building=ED.I" for 127.0.0.1 at 2011-06-06 12:37:58 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I"}
+  [1m[35mEdi Load (0.7ms)[0m  SELECT * from edis where name = NULL
+Rendered locations/get_location_map_from_name.xml.builder (19.2ms)
+Completed 200 OK in 59ms (Views: 34.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mapa/?building=ED.I" for 127.0.0.1 at 2011-06-06 13:40:58 -0700
+  Processing by LocationsController#get_location_map_from_name as XML
+  Parameters: {"building"=>"ED.I"}
+Completed   in 1ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/locations_controller.rb:105:in `get_location_map_from_name'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (168.4ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (212.5ms)
+
+
+Started GET "/search?keyword=ED.I+209A" for 127.0.0.1 at 2011-06-06 13:41:53 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 209A"}
+  [1m[36mEdi Load (0.5ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (5.0ms)[0m  SHOW FIELDS FROM `edis`
+Rendered locations/search.xml.builder (7.1ms)
+Completed   in 50ms
+
+ActionView::Template::Error (can't convert nil into String):
+    2: 
+    3: xml.list(:title => @keyword, :start => @start, :end => @end, :next => @next) do
+    4:   @list.each do |location|
+    5:     xml.item(location.name, :title => "Map", :href => $myApplicationURL + "/map?building="+ location.name + "&id=" + location.id)
+    6:   end
+    7: end
+  app/views/locations/search.xml.builder:5:in `+'
+  app/views/locations/search.xml.builder:5:in `block (2 levels) in _app_views_locations_search_xml_builder__486785118_85849530_91917326'
+  app/views/locations/search.xml.builder:4:in `each'
+  app/views/locations/search.xml.builder:4:in `block in _app_views_locations_search_xml_builder__486785118_85849530_91917326'
+  app/views/locations/search.xml.builder:3:in `_app_views_locations_search_xml_builder__486785118_85849530_91917326'
+  app/controllers/locations_controller.rb:173:in `search'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.8ms)
+
+
+Started GET "/search?keyword=ED.I+209A" for 127.0.0.1 at 2011-06-06 13:44:11 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 209A"}
+  [1m[36mEdi Load (0.7ms)[0m  [1mSELECT * from edis where name = '209A'[0m
+  [1m[35mEdi Columns (2.3ms)[0m  SHOW FIELDS FROM `edis`
+Rendered locations/search.xml.builder (7.9ms)
+Completed   in 34ms
+
+ActionView::Template::Error (can't convert nil into String):
+    2: 
+    3: xml.list(:title => @keyword, :start => @start, :end => @end, :next => @next) do
+    4:   @list.each do |location|
+    5:     xml.item(location.name, :title => "Map", :href => $myApplicationURL + "/map?building="+ location.name + "&id=" + location.id)
+    6:   end
+    7: end
+  app/views/locations/search.xml.builder:5:in `+'
+  app/views/locations/search.xml.builder:5:in `block (2 levels) in _app_views_locations_search_xml_builder__486785118_84427110_91917326'
+  app/views/locations/search.xml.builder:4:in `each'
+  app/views/locations/search.xml.builder:4:in `block in _app_views_locations_search_xml_builder__486785118_84427110_91917326'
+  app/views/locations/search.xml.builder:3:in `_app_views_locations_search_xml_builder__486785118_84427110_91917326'
+  app/controllers/locations_controller.rb:172:in `search'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.8ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.9ms)
+
+
+Started GET "/search?keyword=ED.I" for 127.0.0.1 at 2011-06-06 13:44:28 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I"}
+  [1m[36mCampus Columns (46.2ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+  [1m[35mcampus Columns (1.1ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mCampus Load (87.1ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'ED.I' LIMIT 1[0m
+Completed   in 364ms
+
+NoMethodError (undefined method `each' for #<Campus:0xb5ae715c>):
+  app/controllers/locations_controller.rb:151:in `search'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.8ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.6ms)
+
+
+Started GET "/search?keyword=ED.I" for 127.0.0.1 at 2011-06-06 13:45:45 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I"}
+  [1m[35mCampus Load (4.6ms)[0m  SELECT * from edis where name = 'ED.I'
+Rendered locations/search.xml.builder (15.2ms)
+Completed 200 OK in 73ms (Views: 28.9ms | ActiveRecord: 4.6ms)
+  [1m[35mCampus Load (690.1ms)[0m  select * from campus where name="ED.I
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"ED.I' at line 1: select * from campus where name="ED.I
+
+
+Started GET "/search?keyword=ED.I" for 127.0.0.1 at 2011-06-06 13:46:40 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I"}
+  [1m[36mCampus Load (1.0ms)[0m  [1mSELECT * from campus where name = 'ED.I'[0m
+  [1m[35mCampus Columns (1.8ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (15.6ms)
+Completed   in 41ms
+
+ActionView::Template::Error (can't convert nil into String):
+    2: 
+    3: xml.list(:title => @keyword, :start => @start, :end => @end, :next => @next) do
+    4:   @list.each do |location|
+    5:     xml.item(location.name, :title => "Map", :href => $myApplicationURL + "/map?building="+ location.name + "&id=" + location.id)
+    6:   end
+    7: end
+  app/views/locations/search.xml.builder:5:in `+'
+  app/views/locations/search.xml.builder:5:in `block (2 levels) in _app_views_locations_search_xml_builder__486785118_84493530_91917326'
+  app/views/locations/search.xml.builder:4:in `each'
+  app/views/locations/search.xml.builder:4:in `block in _app_views_locations_search_xml_builder__486785118_84493530_91917326'
+  app/views/locations/search.xml.builder:3:in `_app_views_locations_search_xml_builder__486785118_84493530_91917326'
+  app/controllers/locations_controller.rb:172:in `search'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.1ms)
+
+
+Started GET "/search?keyword=ED.I" for 127.0.0.1 at 2011-06-06 13:47:25 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I"}
+  [1m[36mCampus Load (1.5ms)[0m  [1mSELECT * from campus where name = 'ED.I'[0m
+  [1m[35mCampus Columns (1.6ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (37.5ms)
+Completed 200 OK in 69ms (Views: 41.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/map?building=Ed.I" for 127.0.0.1 at 2011-06-06 13:48:55 -0700
+
+ActionController::RoutingError (No route matches "/map"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/specific?building=Ed.I" for 127.0.0.1 at 2011-06-06 13:49:21 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"Ed.I"}
+  [1m[36mCampus Columns (2.8ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+  [1m[35mcampus Columns (1.0ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mCampus Load (0.5ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'Ed.I' LIMIT 1[0m
+Completed   in 5676ms
+
+NoMethodError (undefined method `description=' for nil:NilClass):
+  app/controllers/locations_controller.rb:206:in `specific'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/search?keyword=ED.I" for 127.0.0.1 at 2011-06-06 13:51:03 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I"}
+  [1m[35mCampus Load (0.3ms)[0m  SELECT * from campus where name = 'ED.I'
+  [1m[36mCampus Columns (2.2ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+Rendered locations/search.xml.builder (19.7ms)
+Completed 200 OK in 48ms (Views: 24.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/search?keyword=ED.I" for 127.0.0.1 at 2011-06-06 13:51:05 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I"}
+  [1m[35mCampus Load (4.4ms)[0m  SELECT * from campus where name = 'ED.I'
+  [1m[36mCampus Columns (1.6ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+Rendered locations/search.xml.builder (31.8ms)
+Completed 200 OK in 68ms (Views: 40.0ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/search?keyword=ED.I+209A" for 127.0.0.1 at 2011-06-06 13:51:08 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 209A"}
+  [1m[35mEdi Load (0.5ms)[0m  SELECT * from edis where name = '209A'
+  [1m[36mEdi Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+Rendered locations/search.xml.builder (13.2ms)
+Completed 200 OK in 66ms (Views: 26.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/search?keyword=ED.I+209A" for 127.0.0.1 at 2011-06-06 13:51:30 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 209A"}
+  [1m[35mEdi Load (0.3ms)[0m  SELECT * from edis where name = '209A'
+  [1m[36mEdi Columns (3.2ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+Rendered locations/search.xml.builder (16.9ms)
+Completed 200 OK in 72ms (Views: 26.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/search?keyword=ED.I+209A" for 127.0.0.1 at 2011-06-06 13:51:35 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 209A"}
+  [1m[35mEdi Load (0.5ms)[0m  SELECT * from edis where name = '209A'
+  [1m[36mEdi Columns (7.8ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+Rendered locations/search.xml.builder (32.4ms)
+Completed 200 OK in 221ms (Views: 53.8ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/specific?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 13:54:55 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+Completed   in 2ms
+
+NameError (undefined local variable or method `id' for #<LocationsController:0x9ead720>):
+  app/controllers/locations_controller.rb:182:in `specific'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started GET "/specific?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 13:55:20 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+Completed   in 7ms
+
+NameError (undefined local variable or method `id' for #<LocationsController:0xb586ccb0>):
+  app/controllers/locations_controller.rb:182:in `specific'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (74.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (93.2ms)
+
+
+Started GET "/specific?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 13:55:38 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Load (16.1ms)[0m  SELECT * from edis where name = '209A'
+Completed   in 39ms
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/locations_controller.rb:203:in `specific'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.1ms)
+  [1m[36mEdi Columns (2.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (62.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (96.8ms)
+
+
+Started GET "/specific?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 13:56:51 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (32.7ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.4ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Completed   in 4598ms
+
+NoMethodError (undefined method `description=' for nil:NilClass):
+  app/controllers/locations_controller.rb:207:in `specific'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.2ms)
+
+
+Started GET "/specific?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 13:59:31 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[36mEdi Columns (1.9ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35medis Columns (1.3ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36mEdi Load (1.4ms)[0m  [1mSELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1[0m
+Rendered locations/specific.xml.builder (8.5ms)
+Completed 200 OK in 4835ms (Views: 13.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/specific?building=ED.I&room=209A" for 127.0.0.1 at 2011-06-06 13:59:36 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209A"}
+  [1m[35mEdi Columns (4.2ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.3ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209A' LIMIT 1
+Rendered locations/specific.xml.builder (7.6ms)
+Completed 200 OK in 7335ms (Views: 12.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/search?keyword=ED.I+20" for 127.0.0.1 at 2011-06-06 13:59:55 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 20"}
+  [1m[36mEdi Load (78.7ms)[0m  [1mSELECT * from edis where name = '20'[0m
+Rendered locations/search.xml.builder (7.4ms)
+Completed 200 OK in 116ms (Views: 13.3ms | ActiveRecord: 78.7ms)
+
+
+Started GET "/search?keyword=ED.I+200" for 127.0.0.1 at 2011-06-06 13:59:58 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 200"}
+  [1m[35mEdi Load (1.1ms)[0m  SELECT * from edis where name = '200'
+Rendered locations/search.xml.builder (7.9ms)
+Completed 200 OK in 40ms (Views: 13.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/search?keyword=ED.I+200" for 127.0.0.1 at 2011-06-06 14:00:00 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 200"}
+  [1m[36mEdi Load (0.4ms)[0m  [1mSELECT * from edis where name = '200'[0m
+Rendered locations/search.xml.builder (8.5ms)
+Completed 200 OK in 39ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=ED.I+209" for 127.0.0.1 at 2011-06-06 14:00:01 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.I 209"}
+  [1m[35mEdi Load (5.5ms)[0m  SELECT * from edis where name = '209'
+  [1m[36mEdi Columns (1.4ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+Rendered locations/search.xml.builder (13.2ms)
+Completed 200 OK in 61ms (Views: 19.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/specific?building=ED.I&room=209" for 127.0.0.1 at 2011-06-06 14:00:07 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.I", "room"=>"209"}
+  [1m[35mEdi Columns (1.4ms)[0m  SHOW FIELDS FROM `edis`
+  [1m[36medis Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `edis`[0m
+  [1m[35mEdi Load (0.6ms)[0m  SELECT `edis`.* FROM `edis` WHERE `edis`.`name` = '209' LIMIT 1
+Rendered locations/specific.xml.builder (7.1ms)
+Completed 200 OK in 4583ms (Views: 15.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/search?keyword=ED.II" for 127.0.0.1 at 2011-06-06 14:00:17 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ED.II"}
+  [1m[36mCampus Load (1.9ms)[0m  [1mSELECT * from campus where name = 'ED.II'[0m
+  [1m[35mCampus Columns (2.0ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (26.9ms)
+Completed 200 OK in 80ms (Views: 31.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/specific?building=Ed.II" for 127.0.0.1 at 2011-06-06 14:00:22 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"Ed.II"}
+  [1m[36mCampus Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+  [1m[35mcampus Columns (1.0ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mCampus Load (0.5ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'Ed.II' LIMIT 1[0m
+Rendered locations/specific.xml.builder (11.3ms)
+Completed 200 OK in 4504ms (Views: 17.5ms | ActiveRecord: 2.8ms)

@@ -7,7 +7,7 @@ gem 'spatial_adapter'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-
+gem 'dropbox'
 # Use unicorn as the web server
 # gem 'unicorn'
 

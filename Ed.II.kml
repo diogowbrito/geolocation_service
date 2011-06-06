@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+     <kml xmlns="http://www.opengis.net/kml/2.2">
+     <Document><Folder><name>sql_statement</name>
+     <Schema name="sql_statement" id="sql_statement">
+       <SimpleField name="Name" type="string"></SimpleField>
+       <SimpleField name="Description" type="string"></SimpleField>
+     </Schema>
+       <Placemark>
+<name>Ed.II</name>
+       <description>&lt;br&gt;&lt;br&gt;&lt;br&gt; &lt;table border=&quot;1&quot; padding=&quot;0&quot;&gt; &lt;tr&gt;&lt;td&gt;Localização&lt;/td&gt;&lt;td&gt;Campus Edificios&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Nome&lt;/td&gt;&lt;td&gt;Ed.II&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Abreviatura&lt;/td&gt;&lt;td&gt;Ed.II&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Tipo&lt;/td&gt;&lt;td&gt;Edifício&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;ID&lt;/td&gt;&lt;td&gt;1178&lt;/td&gt;&lt;/tr&gt;</description>
+       <ExtendedData><SchemaData schemaUrl="#sql_statement">
+         <SimpleData name="Name">Ed.II</SimpleData>
+         <SimpleData name="Description">&lt;br&gt;&lt;br&gt;&lt;br&gt; &lt;table border=&quot;1&quot; padding=&quot;0&quot;&gt; &lt;tr&gt;&lt;td&gt;Localização&lt;/td&gt;&lt;td&gt;Campus Edificios&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Nome&lt;/td&gt;&lt;td&gt;Ed.II&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Abreviatura&lt;/td&gt;&lt;td&gt;Ed.II&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Tipo&lt;/td&gt;&lt;td&gt;Edifício&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;ID&lt;/td&gt;&lt;td&gt;1178&lt;/td&gt;&lt;/tr&gt;</SimpleData>
+       </SchemaData></ExtendedData><Polygon>
+<outerBoundaryIs><LinearRing><coordinates>
+-9.203949,38.661276 -9.203961,38.661266 -9.204021,38.661224 -9.204071,38.661187 -9.203944,38.661079 -9.203913,38.661053 -9.203793,38.660951 -9.203602,38.660786 -9.20354,38.660733 -9.203607,38.660684 -9.203479,38.660576 -9.203289,38.660712 -9.203418,38.660819 -9.203385,38.660843 -9.203382,38.660841 -9.203227,38.660951 -9.203077,38.66106 -9.203063,38.661047 -9.202941,38.661134 -9.203066,38.661241 -9.203093,38.661262 -9.20313,38.661294 -9.203155,38.661316 -9.203193,38.661348 -9.203282,38.661426 -9.203317,38.661454 -9.203411,38.661535 -9.203424,38.661525 -9.203479,38.661486 -9.203501,38.6615 -9.203553,38.661463 -9.203533,38.661446 -9.203353,38.661292 -9.203334,38.661277 -9.203146,38.661118 -9.203176,38.661095 -9.203221,38.661133 -9.203377,38.661022 -9.203495,38.660936 -9.203468,38.660915 -9.2035,38.660892 -9.203583,38.660964 -9.203706,38.661067 -9.203698,38.661075 -9.203718,38.66109 -9.203724,38.661085 -9.203732,38.661091 -9.203727,38.661097 -9.203747,38.661113 -9.203754,38.661108 -9.203843,38.661186 -9.203833,38.661196 -9.203843,38.661205 -9.203855,38.661196 -9.203916,38.661248 -9.203949,38.661276
+</coordinates></LinearRing></outerBoundaryIs>
+</Polygon>
+</Placemark>
+     </Folder></Document></kml>

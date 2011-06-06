@@ -1,7 +1,9 @@
 GeolocationService::Application.routes.draw do
 
-
-  match 'mapa/:building/:room' => 'Locations#get_location_map_from_name'
+            #http://localhost:3006/mapa/?building=ED.I&?room=3
+ # match '/mapa' => 'Locations#get_location_map_from_name', :defaults => { :format => :xml}
+  match 'search' => 'Locations#search', :defaults => {:format => :xml}
+  match 'specific' => 'Locations#specific', :defaults => {:format => :xml}
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

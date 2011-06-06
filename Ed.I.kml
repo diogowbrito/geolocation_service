@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+     <kml xmlns="http://www.opengis.net/kml/2.2">
+     <Document><Folder><name>sql_statement</name>
+     <Schema name="sql_statement" id="sql_statement">
+       <SimpleField name="Name" type="string"></SimpleField>
+       <SimpleField name="Description" type="string"></SimpleField>
+     </Schema>
+       <Placemark>
+<name>Ed.I</name>
+       <description>&lt;br&gt;&lt;br&gt;&lt;br&gt; &lt;table border=&quot;1&quot; padding=&quot;0&quot;&gt; &lt;tr&gt;&lt;td&gt;Localização&lt;/td&gt;&lt;td&gt;Campus Edificios&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Nome&lt;/td&gt;&lt;td&gt;Ed.I&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Abreviatura&lt;/td&gt;&lt;td&gt;Ed.I&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Tipo&lt;/td&gt;&lt;td&gt;Edifício&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;ID&lt;/td&gt;&lt;td&gt;1177&lt;/td&gt;&lt;/tr&gt;</description>
+       <ExtendedData><SchemaData schemaUrl="#sql_statement">
+         <SimpleData name="Name">Ed.I</SimpleData>
+         <SimpleData name="Description">&lt;br&gt;&lt;br&gt;&lt;br&gt; &lt;table border=&quot;1&quot; padding=&quot;0&quot;&gt; &lt;tr&gt;&lt;td&gt;Localização&lt;/td&gt;&lt;td&gt;Campus Edificios&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Nome&lt;/td&gt;&lt;td&gt;Ed.I&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Abreviatura&lt;/td&gt;&lt;td&gt;Ed.I&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Tipo&lt;/td&gt;&lt;td&gt;Edifício&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;ID&lt;/td&gt;&lt;td&gt;1177&lt;/td&gt;&lt;/tr&gt;</SimpleData>
+       </SchemaData></ExtendedData><Polygon>
+<outerBoundaryIs><LinearRing><coordinates>
+-9.205317,38.661374 -9.205505,38.661371 -9.205505,38.661482 -9.205512,38.661628 -9.205511,38.661641 -9.205511,38.661656 -9.205484,38.661657 -9.205487,38.661787 -9.205625,38.661786 -9.20589,38.661783 -9.206181,38.661781 -9.206181,38.661767 -9.206206,38.661765 -9.206203,38.661649 -9.206177,38.66165 -9.20598,38.661652 -9.205845,38.661653 -9.205606,38.661657 -9.205604,38.661621 -9.205672,38.661621 -9.205667,38.661331 -9.205627,38.661332 -9.205626,38.661299 -9.20585,38.661297 -9.206044,38.661295 -9.206292,38.661293 -9.206292,38.661279 -9.206341,38.661278 -9.206341,38.661261 -9.20634,38.661217 -9.20629,38.661217 -9.206289,38.661162 -9.206048,38.661164 -9.205833,38.661167 -9.205595,38.661169 -9.205501,38.661169 -9.2055,38.661097 -9.205314,38.661099 -9.205315,38.661188 -9.205315,38.661272 -9.205316,38.661346 -9.205317,38.661374
+</coordinates></LinearRing></outerBoundaryIs>
+</Polygon>
+</Placemark>
+     </Folder></Document></kml>
