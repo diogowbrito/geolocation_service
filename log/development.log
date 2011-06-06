@@ -1523,3 +1523,113 @@ Started GET "/specific?building=Ed.II" for 127.0.0.1 at 2011-06-06 14:00:22 -070
   [1m[36mCampus Load (0.5ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'Ed.II' LIMIT 1[0m
 Rendered locations/specific.xml.builder (11.3ms)
 Completed 200 OK in 4504ms (Views: 17.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/search?keyword=CAMPUS" for 127.0.0.1 at 2011-06-06 14:15:16 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"CAMPUS"}
+  [1m[35mCampus Load (81.7ms)[0m  SELECT * from campus where name = 'CAMPUS'
+Rendered locations/search.xml.builder (82.6ms)
+Completed 200 OK in 229ms (Views: 89.4ms | ActiveRecord: 81.7ms)
+
+
+Started GET "/search?keyword=CAMPUS" for 127.0.0.1 at 2011-06-06 14:15:21 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"CAMPUS"}
+  [1m[36mCampus Load (0.4ms)[0m  [1mSELECT * from campus where name = 'CAMPUS'[0m
+Rendered locations/search.xml.builder (8.1ms)
+Completed 200 OK in 66ms (Views: 17.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=campus" for 127.0.0.1 at 2011-06-06 14:15:24 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"campus"}
+  [1m[35mCampus Load (0.6ms)[0m  SELECT * from campus where name = 'campus'
+Rendered locations/search.xml.builder (6.5ms)
+Completed 200 OK in 196ms (Views: 11.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/search?keyword=campus+ed.ii" for 127.0.0.1 at 2011-06-06 14:16:01 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"campus ed.ii"}
+Completed   in 4ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/locations_controller.rb:114:in `search'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (109.2ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (135.3ms)
+
+
+Started GET "/search?keyword=capus+ed.ii" for 127.0.0.1 at 2011-06-06 14:16:21 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"capus ed.ii"}
+Completed   in 1ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each):
+  app/controllers/locations_controller.rb:114:in `search'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (69.0ms)
+
+
+Started GET "/search?keyword=capus" for 127.0.0.1 at 2011-06-06 14:16:24 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"capus"}
+  [1m[36mCampus Load (1.3ms)[0m  [1mSELECT * from campus where name = 'capus'[0m
+Rendered locations/search.xml.builder (10.6ms)
+Completed 200 OK in 41ms (Views: 17.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/search?keyword=capus&room=3" for 127.0.0.1 at 2011-06-06 14:16:32 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"capus", "room"=>"3"}
+  [1m[35mCampus Load (0.7ms)[0m  SELECT * from campus where name = 'capus'
+Rendered locations/search.xml.builder (6.8ms)
+Completed 200 OK in 46ms (Views: 12.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/search?keyword=campus&room=3" for 127.0.0.1 at 2011-06-06 14:16:36 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"campus", "room"=>"3"}
+  [1m[36mCampus Load (0.3ms)[0m  [1mSELECT * from campus where name = 'campus'[0m
+Rendered locations/search.xml.builder (8.0ms)
+Completed 200 OK in 42ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=campus&room=ed.ii" for 127.0.0.1 at 2011-06-06 14:16:38 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"campus", "room"=>"ed.ii"}
+  [1m[35mCampus Load (0.3ms)[0m  SELECT * from campus where name = 'campus'
+Rendered locations/search.xml.builder (10.7ms)
+Completed 200 OK in 49ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=campus&room=ed.i" for 127.0.0.1 at 2011-06-06 14:16:41 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"campus", "room"=>"ed.i"}
+  [1m[36mCampus Load (0.3ms)[0m  [1mSELECT * from campus where name = 'campus'[0m
+Rendered locations/search.xml.builder (6.6ms)
+Completed 200 OK in 26ms (Views: 13.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=campus&room=ed" for 127.0.0.1 at 2011-06-06 14:16:45 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"campus", "room"=>"ed"}
+  [1m[35mCampus Load (0.3ms)[0m  SELECT * from campus where name = 'campus'
+Rendered locations/search.xml.builder (18.1ms)
+Completed 200 OK in 72ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=campus&room=ed.i" for 127.0.0.1 at 2011-06-06 14:16:47 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"campus", "room"=>"ed.i"}
+  [1m[36mCampus Load (3.9ms)[0m  [1mSELECT * from campus where name = 'campus'[0m
+Rendered locations/search.xml.builder (13.5ms)
+Completed 200 OK in 47ms (Views: 22.6ms | ActiveRecord: 3.9ms)
