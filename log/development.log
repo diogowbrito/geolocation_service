@@ -155,3 +155,275 @@ Mysql2::Error: Table 'campus' already exists: CREATE TABLE `campus` (`ogr_fid` i
 Mysql2::Error: Unknown column 'id' in 'field list': select id, name from edivs
   [1m[35mEdiv Load (1.1ms)[0m  select ogr_fid, name from edivs
   [1m[36mEdiv Load (38.9ms)[0m  [1mselect ogr_fid from edivs[0m
+
+
+Started GET "/mapa/ED.I/3.18" for 127.0.0.1 at 2011-05-30 11:28:21 -0700
+
+ActionController::RoutingError (No route matches "/mapa/ED.I/3.18"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/mapa/I/F" for 127.0.0.1 at 2011-05-30 11:29:10 -0700
+
+SyntaxError (/home/alaxid/Desktop/PI/geolocation_service/app/controllers/application_controller.rb:4: target of repeat operator is not specified: /* $i_comercial = '&'   */):
+  app/controllers/locations_controller.rb:1:in `<top (required)>'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.0ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.5ms)
+
+
+Started GET "/mapa/I/F" for 127.0.0.1 at 2011-05-30 11:29:37 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"I", "room"=>"F"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (69.7ms)
+Completed   in 93ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: 
+    2: <h1> tcharan</h1>
+    3: <h1> <%= @location.name %></h1>
+  app/views/locations/get_location_map_from_name.erb:3:in `_app_views_locations_get_location_map_from_name_erb___839520722_78557970_612353583'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/mapa/I/F" for 127.0.0.1 at 2011-05-30 11:30:47 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"I", "room"=>"F"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (1.0ms)
+Completed   in 21ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: 
+    2: <h1> tcharan</h1>
+    3: <h1> <%= @location.name %></h1>
+  app/views/locations/get_location_map_from_name.erb:3:in `_app_views_locations_get_location_map_from_name_erb___839520722_75402220_612353583'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.7ms)
+
+
+Started GET "/mapa/ED.I/3.18/" for 127.0.0.1 at 2011-05-30 11:30:59 -0700
+
+ActionController::RoutingError (No route matches "/mapa/ED.I/3.18"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+
+Started GET "/mapa/%27ED.I%27/3.18/" for 127.0.0.1 at 2011-05-30 11:31:05 -0700
+
+ActionController::RoutingError (No route matches "/mapa/%27ED.I%27/3.18"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/mapa/%27ED.I%27/%273.18%27/" for 127.0.0.1 at 2011-05-30 11:31:09 -0700
+
+ActionController::RoutingError (No route matches "/mapa/%27ED.I%27/%273.18%27"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/mapa/%27ED.I%27/%273.18%27/" for 127.0.0.1 at 2011-05-30 11:32:10 -0700
+
+ActionController::RoutingError (No route matches "/mapa/%27ED.I%27/%273.18%27"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/mapa/blu" for 127.0.0.1 at 2011-05-30 11:32:35 -0700
+
+ActionController::RoutingError (No route matches "/mapa/blu"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/mapa/blu/blu" for 127.0.0.1 at 2011-05-30 11:32:37 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"blu", "room"=>"blu"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (1.0ms)
+Completed   in 24ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: 
+    2: <h1> tcharan</h1>
+    3: <!--<h1> <%= @location.name %></h1>                        -->
+    4: <%= @pling %>
+  app/views/locations/get_location_map_from_name.erb:3:in `_app_views_locations_get_location_map_from_name_erb___839520722_78236540_612353583'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/mapa/blu/blu" for 127.0.0.1 at 2011-05-30 11:32:47 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"blu", "room"=>"blu"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (25.2ms)
+Completed 200 OK in 40ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mapa/ed.i/127" for 127.0.0.1 at 2011-05-30 11:35:02 -0700
+
+ActionController::RoutingError (No route matches "/mapa/ed.i/127"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/mapa/edi/127" for 127.0.0.1 at 2011-05-30 11:35:07 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"edi", "room"=>"127"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (3.6ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mapa/ed.i/127" for 127.0.0.1 at 2011-05-30 11:35:16 -0700
+
+ActionController::RoutingError (No route matches "/mapa/ed.i/127"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/mapa/edi/127" for 127.0.0.1 at 2011-05-30 11:35:21 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"edi", "room"=>"127"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (9.2ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mapa?building=ed.i&?room=4" for 127.0.0.1 at 2011-05-30 11:37:55 -0700
+
+ActionController::RoutingError (No route matches "/mapa"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+
+Started GET "/mapa/ed/3" for 127.0.0.1 at 2011-05-30 11:40:49 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ed", "room"=>"3"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mapa/ed.f/3" for 127.0.0.1 at 2011-05-30 11:40:54 -0700
+
+ActionController::RoutingError (No route matches "/mapa/ed.f/3"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/mapa/edf/3" for 127.0.0.1 at 2011-05-30 11:41:15 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"edf", "room"=>"3"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (7.9ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mapa/ed.f/3" for 127.0.0.1 at 2011-05-30 11:41:21 -0700
+
+ActionController::RoutingError (No route matches "/mapa/ed.f/3"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/mapa/ed_f/3" for 127.0.0.1 at 2011-05-30 11:45:11 -0700
+  Processing by LocationsController#get_location_map_from_name as HTML
+  Parameters: {"building"=>"ed_f", "room"=>"3"}
+Rendered locations/get_location_map_from_name.erb within layouts/application (3.1ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/services/People/index" for 127.0.0.1 at 2011-05-31 08:04:21 -0700
+
+ActionController::RoutingError (No route matches "/services/People/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (549.3ms)
+
+
+Started GET "/services/People/index" for 127.0.0.1 at 2011-05-31 08:05:22 -0700
+
+ActionController::RoutingError (No route matches "/services/People/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (223.5ms)
+
+
+Started GET "/services/CursosCadeiras/index" for 127.0.0.1 at 2011-05-31 08:05:34 -0700
+
+ActionController::RoutingError (No route matches "/services/CursosCadeiras/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/services/people/index" for 127.0.0.1 at 2011-05-31 08:55:08 -0700
+
+ActionController::RoutingError (No route matches "/services/people/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (21.7ms)
+
+
+Started GET "/services/people/index" for 127.0.0.1 at 2011-05-31 09:37:50 -0700
+
+ActionController::RoutingError (No route matches "/services/people/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (27.8ms)
+
+
+Started GET "/services/people/index" for 127.0.0.1 at 2011-05-31 09:38:27 -0700
+
+ActionController::RoutingError (No route matches "/services/people/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.7ms)
+
+
+Started GET "/services/people/index" for 127.0.0.1 at 2011-05-31 09:38:53 -0700
+
+ActionController::RoutingError (No route matches "/services/people/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/services/people/index" for 127.0.0.1 at 2011-05-31 09:39:49 -0700
+
+ActionController::RoutingError (No route matches "/services/people/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/services/people/index" for 127.0.0.1 at 2011-05-31 09:40:32 -0700
+
+ActionController::RoutingError (No route matches "/services/people/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/services/people/index" for 127.0.0.1 at 2011-05-31 09:51:25 -0700
+
+ActionController::RoutingError (No route matches "/services/people/index"):
+  
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)

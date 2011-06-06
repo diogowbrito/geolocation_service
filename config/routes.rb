@@ -1,9 +1,13 @@
 GeolocationService::Application.routes.draw do
+
+
+  match 'mapa/:building/:room' => 'Locations#get_location_map_from_name'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
-  #   match 'products/:id' => 'catalog#view'
+  #   match 'products/:id' => @location'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
