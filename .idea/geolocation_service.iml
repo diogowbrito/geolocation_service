@@ -81,6 +81,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.6, /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/thor-0.14.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/builder-2.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.10, /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/arel-2.0.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] json (v1.5.1, /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/json-1.5.1)" level="application" />
   </component>
 </module>
 

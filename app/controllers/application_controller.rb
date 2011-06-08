@@ -1,8 +1,14 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-#  $myApplicationURL = "http://193.136.122.76:3006"
- $myApplicationURL = "http://localhost:3006"
+  helper_method :get_address
+
+  def get_address
+    port = request.port
+    host = request.host
+    return "http://"+host.to_s+":"+port.to_s
+  end
+
 
 end
 

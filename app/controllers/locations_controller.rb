@@ -1,6 +1,19 @@
 class LocationsController < ApplicationController
 
 
+  def description
+    @address = get_address
+    respond_to :xml
+  end
+
+  def meta_info
+    @address = get_address
+    respond_to :xml
+  end
+
+  def status
+    respond_to :xml
+  end
 
 
   def writeToFile(file_name, location)
@@ -80,7 +93,7 @@ class LocationsController < ApplicationController
     @start = params[:start] || '1'
     @end = params[:end] || '20'
     @next = @end.to_i+1
-
+    @address = get_address
 
     keyarray = @keyword.to_s.split(' ')
     building = keyarray[0]
@@ -104,7 +117,7 @@ class LocationsController < ApplicationController
         when "CITI"
           @locations = Citi.find_by_sql(["SELECT * from citis where name = ?", room ])
         else
-          #
+          @locations = Campus.find_by_sql(["SELECT * from campus where name = ?", room ])
       end
     end
 
@@ -113,9 +126,11 @@ class LocationsController < ApplicationController
 
     @locations.each do |location|
       if (room != nil)
+      	location.description = building + " " + location.name
         location.name = building + "&room=" + location.name
-      end
-
+    	else
+        location.description = building
+    	end
       if counter >= @start.to_i then
         @list << location
       end
