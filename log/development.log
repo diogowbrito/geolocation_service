@@ -2089,3 +2089,9 @@ Started GET "/specific?building=Ed.VII" for 127.0.0.1 at 2011-06-08 09:16:27 -07
   [1m[36mCampus Load (23.4ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'Ed.VII' LIMIT 1[0m
 Rendered locations/specific.xml.builder (8.7ms)
 Completed 200 OK in 6658ms (Views: 202.2ms | ActiveRecord: 319.1ms)
+
+
+Started GET "/metainfo" for 127.0.0.1 at 2011-06-08 09:16:46 -0700
+  Processing by LocationsController#meta_info as XML
+Rendered locations/meta_info.xml (0.9ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
