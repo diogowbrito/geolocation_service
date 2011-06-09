@@ -24,7 +24,7 @@ class LocationsController < ApplicationController
 
     File.new(file_name.to_s+".kml", "w+")
 
-    @file = File.open(file_name.to_s+".kml", "w+")
+    @file = File.open("public/kmlTrunk/" + file_name.to_s+".kml", "w+")
 
 
 
@@ -49,6 +49,7 @@ class LocationsController < ApplicationController
 
     @file.close()
 
+    return ("/kmlTrunk/" + file_name.to_s+".kml");
 
   end
 
@@ -181,9 +182,17 @@ class LocationsController < ApplicationController
       office = building + "_" + @location.name
     end
 
-    writeToFile(office, @location)
-    @location.description = upload_file_to_dropbox(office)
+    @location.description = get_address + writeToFile(office, @location)
+
+  #  @location.description = upload_file_to_dropbox(office)
 
     respond_to :xml
   end
+
+  def download_kml
+    fileName = params[:id]
+        send_data("public/kmlTrunk/" +fileName, :filename => "#{fileName}", :type => "application/kml")
+    end
 end
+
+
