@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a1e108e-f3c5-4983-9eb6-416644238516" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/locations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/locations_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="geolocation_service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +30,7 @@
       <file leaf-file-name="locations_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="0" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.65656567">
+            <state line="107" column="20" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.5163511">
               <folding />
             </state>
           </provider>
@@ -620,7 +621,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.65656567">
+        <state line="107" column="20" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.5163511">
           <folding />
         </state>
       </provider>

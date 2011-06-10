@@ -5021,3 +5021,23 @@ Started GET "/geolocation/specific?building=Ed.II" for 127.0.0.1 at 2011-06-09 1
   [1m[36mCampus Load (0.8ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'Ed.II' LIMIT 1[0m
 Rendered locations/specific.xml.builder (10.6ms)
 Completed 200 OK in 136ms (Views: 73.6ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/geolocation/specific?building=ED.II&room=128" for 127.0.0.1 at 2011-06-09 18:23:01 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.II", "room"=>"128"}
+  [1m[35mEdii Columns (4.4ms)[0m  SHOW FIELDS FROM `ediis`
+  [1m[36mediis Columns (1.1ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+  [1m[35mEdii Load (0.3ms)[0m  SELECT `ediis`.* FROM `ediis` WHERE `ediis`.`name` = '128' LIMIT 1
+Rendered locations/specific.xml.builder (6.6ms)
+Completed 200 OK in 89ms (Views: 30.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/geolocation/specific?building=ED.II" for 127.0.0.1 at 2011-06-09 18:23:28 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.II"}
+  [1m[36mCampus Columns (1.9ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+  [1m[35mcampus Columns (14.3ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mCampus Load (156.9ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'ED.II' LIMIT 1[0m
+Rendered locations/specific.xml.builder (6.5ms)
+Completed 200 OK in 240ms (Views: 12.8ms | ActiveRecord: 173.1ms)
