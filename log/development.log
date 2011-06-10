@@ -4918,3 +4918,41 @@ Started GET "/search?keyword=Edif%C3%ADcio%20ii%20128" for 127.0.0.1 at 2011-06-
   [1m[36mEdii Columns (4.5ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
 Rendered locations/search.xml.builder (7.7ms)
 Completed 200 OK in 52ms (Views: 13.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/search?keyword=ed.i" for 127.0.0.1 at 2011-06-09 17:56:27 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed.i"}
+  [1m[35mCampus Load (0.5ms)[0m  SELECT * from campus where name = 'ed.i'
+  [1m[36mCampus Columns (3.0ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+Rendered locations/search.xml.builder (6.8ms)
+Completed 200 OK in 55ms (Views: 12.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/geolocation/specific?building=Ed.I" for 127.0.0.1 at 2011-06-09 17:56:31 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"Ed.I"}
+  [1m[35mCampus Columns (4.2ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mcampus Columns (7.2ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+  [1m[35mCampus Load (0.3ms)[0m  SELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'Ed.I' LIMIT 1
+Rendered locations/specific.xml.builder (10.8ms)
+Completed 200 OK in 149ms (Views: 30.7ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/search?keyword=ed%20ii%20128" for 127.0.0.1 at 2011-06-09 17:56:41 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii 128"}
+  [1m[36mEdii Load (0.2ms)[0m  [1mSELECT * from ediis where name = '128'[0m
+  [1m[35mEdii Columns (1.6ms)[0m  SHOW FIELDS FROM `ediis`
+Rendered locations/search.xml.builder (11.4ms)
+Completed 200 OK in 72ms (Views: 33.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/geolocation/specific?building=ED.II&room=128" for 127.0.0.1 at 2011-06-09 17:56:47 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.II", "room"=>"128"}
+  [1m[36mEdii Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+  [1m[35mediis Columns (1.0ms)[0m  SHOW FIELDS FROM `ediis`
+  [1m[36mEdii Load (162.8ms)[0m  [1mSELECT `ediis`.* FROM `ediis` WHERE `ediis`.`name` = '128' LIMIT 1[0m
+Rendered locations/specific.xml.builder (8.7ms)
+Completed 200 OK in 228ms (Views: 16.9ms | ActiveRecord: 165.1ms)
