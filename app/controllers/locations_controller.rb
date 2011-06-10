@@ -102,16 +102,7 @@ class LocationsController < ApplicationController
 
     building = keyarray[0]
     room = keyarray[1]
-    #if there are three arguments
-    if keyarray[2] != nil
-      building = "ED." + keyarray[1].upcase
-      room = keyarray[2].upcase
-    else
-      if (keyarray[0].upcase == "EDIFICIO" || keyarray[0].upcase == "EDIFÍCIO" || keyarray[0].upcase == "EDIFíCIO" || keyarray[0].upcase == "ED")
-        building = "ED." + keyarray[1].upcase
-        room = nil
-      end
-    end
+
 
     if (room == nil)
       office = building;
