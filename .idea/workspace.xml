@@ -30,7 +30,7 @@
       <file leaf-file-name="locations_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="110" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.38726333">
+            <state line="104" column="3" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.35353535">
               <folding />
             </state>
           </provider>
@@ -621,7 +621,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="110" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.38726333">
+        <state line="104" column="3" selection-start="2457" selection-end="2457" vertical-scroll-proportion="0.35353535">
           <folding />
         </state>
       </provider>

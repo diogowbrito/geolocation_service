@@ -4956,3 +4956,68 @@ Started GET "/geolocation/specific?building=ED.II&room=128" for 127.0.0.1 at 201
   [1m[36mEdii Load (162.8ms)[0m  [1mSELECT `ediis`.* FROM `ediis` WHERE `ediis`.`name` = '128' LIMIT 1[0m
 Rendered locations/specific.xml.builder (8.7ms)
 Completed 200 OK in 228ms (Views: 16.9ms | ActiveRecord: 165.1ms)
+
+
+Started GET "/search?keyword=ed%20ii%20128" for 127.0.0.1 at 2011-06-09 17:59:54 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii 128"}
+  [1m[35mEdii Load (0.4ms)[0m  SELECT * from ediis where name = '128'
+  [1m[36mEdii Columns (3.7ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+Rendered locations/search.xml.builder (7.6ms)
+Completed 200 OK in 48ms (Views: 15.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/search?keyword=ed%20ii%20128" for 127.0.0.1 at 2011-06-09 17:59:57 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii 128"}
+  [1m[35mEdii Load (6.6ms)[0m  SELECT * from ediis where name = '128'
+  [1m[36mEdii Columns (1.2ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+Rendered locations/search.xml.builder (6.7ms)
+Completed 200 OK in 40ms (Views: 11.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/search?keyword=Edif%C3%ADcio%20ii%20128" for 127.0.0.1 at 2011-06-09 18:00:55 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Edifício ii 128"}
+  [1m[35mEdii Load (0.3ms)[0m  SELECT * from ediis where name = '128'
+  [1m[36mEdii Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+Rendered locations/search.xml.builder (26.8ms)
+Completed 200 OK in 71ms (Views: 39.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/geolocation/specific?building=ED.II&room=128" for 127.0.0.1 at 2011-06-09 18:01:01 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"ED.II", "room"=>"128"}
+  [1m[35mEdii Columns (11.3ms)[0m  SHOW FIELDS FROM `ediis`
+  [1m[36mediis Columns (1.3ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+  [1m[35mEdii Load (0.4ms)[0m  SELECT `ediis`.* FROM `ediis` WHERE `ediis`.`name` = '128' LIMIT 1
+Rendered locations/specific.xml.builder (8.2ms)
+Completed 200 OK in 77ms (Views: 19.8ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/search?keyword=ed.ii" for 127.0.0.1 at 2011-06-09 18:07:06 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed.ii"}
+  [1m[36mCampus Load (0.8ms)[0m  [1mSELECT * from campus where name = 'ed.ii'[0m
+  [1m[35mCampus Columns (2.5ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (7.4ms)
+Completed 200 OK in 95ms (Views: 14.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/search?keyword=ed%20ii" for 127.0.0.1 at 2011-06-09 18:07:09 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii"}
+  [1m[36mCampus Load (0.3ms)[0m  [1mSELECT * from campus where name = 'ED.II'[0m
+  [1m[35mCampus Columns (1.3ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (9.4ms)
+Completed 200 OK in 148ms (Views: 15.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/geolocation/specific?building=Ed.II" for 127.0.0.1 at 2011-06-09 18:07:14 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"Ed.II"}
+  [1m[36mCampus Columns (5.6ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+  [1m[35mcampus Columns (1.4ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mCampus Load (0.8ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'Ed.II' LIMIT 1[0m
+Rendered locations/specific.xml.builder (10.6ms)
+Completed 200 OK in 136ms (Views: 73.6ms | ActiveRecord: 7.8ms)
