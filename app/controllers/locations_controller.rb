@@ -107,7 +107,7 @@ class LocationsController < ApplicationController
       building = "ED." + keyarray[1].upcase
       room = keyarray[2].upcase
     else
-      if (keyarray[0].upcase == "EDIFICIO" || keyarray[0].upcase == "EDIFÍCIO" || keyarray[0].upcase == "ED")
+      if (keyarray[0].upcase == "EDIFICIO" || keyarray[0].upcase == "EDIFÍCIO" || keyarray[0].upcase == "EDIFíCIO" || keyarray[0].upcase == "ED")
         building = "ED." + keyarray[1].upcase
         room = nil
       end

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1e108e-f3c5-4983-9eb6-416644238516" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/locations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/locations_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
@@ -31,7 +30,7 @@
       <file leaf-file-name="locations_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="7" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.63131315">
+            <state line="109" column="110" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.38726333">
               <folding />
             </state>
           </provider>
@@ -622,7 +621,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="7" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.63131315">
+        <state line="109" column="110" selection-start="2712" selection-end="2712" vertical-scroll-proportion="0.38726333">
           <folding />
         </state>
       </provider>

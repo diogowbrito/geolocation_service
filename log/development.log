@@ -4882,3 +4882,39 @@ Started GET "/search?keyword=ed%20ii%20128" for 127.0.0.1 at 2011-06-09 17:40:15
   [1m[36mEdii Columns (2.0ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
 Rendered locations/search.xml.builder (7.6ms)
 Completed 200 OK in 159ms (Views: 103.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/search?keyword=edificio%20ii%20128" for 127.0.0.1 at 2011-06-09 17:42:44 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"edificio ii 128"}
+  [1m[35mEdii Load (0.5ms)[0m  SELECT * from ediis where name = '128'
+  [1m[36mEdii Columns (2.3ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+Rendered locations/search.xml.builder (11.9ms)
+Completed 200 OK in 76ms (Views: 26.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/search?keyword=edificio%20ii%20128" for 127.0.0.1 at 2011-06-09 17:46:59 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"edificio ii 128"}
+  [1m[35mEdii Load (0.5ms)[0m  SELECT * from ediis where name = '128'
+  [1m[36mEdii Columns (4.9ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+Rendered locations/search.xml.builder (7.4ms)
+Completed 200 OK in 41ms (Views: 14.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/search?keyword=edif%C3%ADcio%20ii%20128" for 127.0.0.1 at 2011-06-09 17:47:03 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"edifício ii 128"}
+  [1m[35mEdii Load (4.4ms)[0m  SELECT * from ediis where name = '128'
+  [1m[36mEdii Columns (1.9ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+Rendered locations/search.xml.builder (6.6ms)
+Completed 200 OK in 54ms (Views: 15.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/search?keyword=Edif%C3%ADcio%20ii%20128" for 127.0.0.1 at 2011-06-09 17:47:05 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Edifício ii 128"}
+  [1m[35mEdii Load (0.4ms)[0m  SELECT * from ediis where name = '128'
+  [1m[36mEdii Columns (4.5ms)[0m  [1mSHOW FIELDS FROM `ediis`[0m
+Rendered locations/search.xml.builder (7.7ms)
+Completed 200 OK in 52ms (Views: 13.6ms | ActiveRecord: 4.9ms)
