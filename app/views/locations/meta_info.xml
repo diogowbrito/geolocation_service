@@ -1,4 +1,4 @@
-<service name="geolocation" url="<%=@address%>">
+<service name="GeoFCT" url="<%=@address%>">
     <provider>G6</provider>
     <serviceID>geo</serviceID>
     <type>map</type>
