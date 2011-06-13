@@ -2,11 +2,14 @@ GeolocationService::Application.routes.draw do
 
   root :to => "Locations#description", :defaults => { :format => :xml}
 
-  match "index" => "Professors#description", :defaults => { :format => :xml}
+  match "index" => "Locations#description", :defaults => { :format => :xml}
   match "status" => "Locations#status", :defaults => { :format => :xml}
   match "metainfo" => "Locations#meta_info", :defaults => { :format => :xml}
   match 'search' => 'Locations#search', :defaults => {:format => :xml}
-  match 'specific' => 'Locations#specific', :defaults => {:format => :xml}
+  match 'geolocation/specific' => 'Locations#specific', :defaults => {:format => :xml}
+
+  match 'kmlTrunk/:filename' => 'Locations#download_kml'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

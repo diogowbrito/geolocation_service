@@ -1,3 +1,5 @@
+#Encoding: UTF-8
+
 class LocationsController < ApplicationController
 
 
@@ -24,7 +26,7 @@ class LocationsController < ApplicationController
 
     File.new(file_name.to_s+".kml", "w+")
 
-    @file = File.open(file_name.to_s+".kml", "w+")
+    @file = File.open("public/kmlTrunk/" + file_name.to_s+".kml", "w+")
 
 
 
@@ -49,6 +51,7 @@ class LocationsController < ApplicationController
 
     @file.close()
 
+    return ("/kmlTrunk/" + file_name.to_s+".kml");
 
   end
 
@@ -96,8 +99,19 @@ class LocationsController < ApplicationController
     @address = get_address
 
     keyarray = @keyword.to_s.split(' ')
+
     building = keyarray[0]
     room = keyarray[1]
+    #if there are three arguments
+    if keyarray[2] != nil
+      building = "ED." + keyarray[1].upcase
+      room = keyarray[2].upcase
+    else
+      if (keyarray[0].upcase == "EDIFICIO" || keyarray[0].upcase == "EDIFÍCIO" || keyarray[0].upcase == "EDIFíCIO" || keyarray[0].upcase == "ED")
+        building = "ED." + keyarray[1].upcase
+        room = nil
+      end
+    end
 
     if (room == nil)
       office = building;
@@ -107,7 +121,7 @@ class LocationsController < ApplicationController
         when "ED.I"
           @locations = Edi.find_by_sql(["SELECT * from edis where name = ?", room ])
         when "ED.II"
-          @locations = Edii.find_by_sql(["SELECT * from ediiis where name = ?", room ])
+          @locations = Edii.find_by_sql(["SELECT * from ediis where name = ?", room ])
         when "ED.III"
           @locations = Ediii.find_by_sql(["SELECT * from ediiis where name = ?", room ])
         when "ED.IV"
@@ -181,9 +195,17 @@ class LocationsController < ApplicationController
       office = building + "_" + @location.name
     end
 
-    writeToFile(office, @location)
-    @location.description = upload_file_to_dropbox(office)
+    @location.description = get_address + writeToFile(office, @location)
+
+  #  @location.description = upload_file_to_dropbox(office)
 
     respond_to :xml
   end
+
+  def download_kml
+    fileName = params[:id]
+        send_data("public/kmlTrunk/" +fileName, :filename => "#{fileName}", :type => "application/kml")
+    end
 end
+
+
