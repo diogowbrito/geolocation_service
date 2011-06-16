@@ -12,7 +12,10 @@
 		<entity>room</entity>
 		<entity>building</entity>
     </referedEntities>
+
     <informedEntities>
+      <entity>room</entity>
+		<entity>building</entity>
     </informedEntities>
     <competences>
     <competence path="/index" httpOp="">

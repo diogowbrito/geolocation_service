@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1e108e-f3c5-4983-9eb6-416644238516" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/locations/meta_info.xml" afterPath="$PROJECT_DIR$/app/views/locations/meta_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="geolocation_service.iws" />
@@ -26,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="locations_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="locations_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="20" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.5163511">
+            <state line="118" column="23" selection-start="2975" selection-end="2975" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meta_info.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="meta_info.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/locations/meta_info.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="45" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+            <state line="17" column="33" selection-start="421" selection-end="421" vertical-scroll-proportion="0.6085919">
               <folding />
             </state>
           </provider>
@@ -115,10 +117,10 @@
         <option value="$PROJECT_DIR$/app/views/locations/description.xml.builder" />
         <option value="$PROJECT_DIR$/app/views/locations/description.xml" />
         <option value="$PROJECT_DIR$/app/views/locations/status.xml" />
-        <option value="$PROJECT_DIR$/app/views/locations/meta_info.xml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/locations/search.xml.builder" />
         <option value="$PROJECT_DIR$/app/controllers/locations_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/locations/meta_info.xml" />
       </list>
     </option>
   </component>
@@ -174,8 +176,18 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="Scope" />
+      <pane id="Favorites" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geolocation_service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="RailsProjectView">
         <subPane>
           <PATH>
@@ -204,16 +216,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="LocationsController" />
               <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.ControllerClassNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="geolocation_service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -488,14 +490,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="1" width="1282" height="776" extended-state="6" />
+    <frame x="0" y="1" width="1168" height="601" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18022329" sideWeight="0.9613601" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19736843" sideWeight="0.9613601" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33281735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -586,19 +588,14 @@
         <state line="4" column="28" selection-start="112" selection-end="112" vertical-scroll-proportion="0.15873016" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/locations/search.xml.builder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="53" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/locations/description.xml">
@@ -606,21 +603,26 @@
         <state line="2" column="40" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/locations/meta_info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="45" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/locations/status.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="20" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.5163511">
+        <state line="118" column="23" selection-start="2975" selection-end="2975" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/locations/meta_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="33" selection-start="421" selection-end="421" vertical-scroll-proportion="0.6085919">
           <folding />
         </state>
       </provider>

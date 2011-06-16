@@ -5291,3 +5291,158 @@ Started GET "/geolocation/specific?&building=ED.II&room=127" for 127.0.0.1 at 20
   [1m[36mEdii Load (0.6ms)[0m  [1mSELECT `ediis`.* FROM `ediis` WHERE `ediis`.`name` = '127' LIMIT 1[0m
 Rendered locations/specific.xml.builder (15.4ms)
 Completed 200 OK in 116ms (Views: 24.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2011-06-10 19:01:26 -0700
+  Processing by LocationsController#description as XML
+Rendered locations/description.xml (3.2ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?keyword=ed.i" for 127.0.0.1 at 2011-06-10 19:01:31 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed.i"}
+  [1m[36mCampus Load (100.2ms)[0m  [1mSELECT * from campus where name = 'ed.i'[0m
+  [1m[35mCampus Columns (26.1ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (150.0ms)
+Completed 200 OK in 345ms (Views: 168.9ms | ActiveRecord: 126.3ms)
+
+
+Started GET "/metainfo" for 127.0.0.1 at 2011-06-10 19:12:37 -0700
+  Processing by LocationsController#meta_info as XML
+Rendered locations/meta_info.xml (1.9ms)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/metainfo" for 127.0.0.1 at 2011-06-10 19:15:33 -0700
+  Processing by LocationsController#meta_info as XML
+Rendered locations/meta_info.xml (1.0ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/metainfo" for 127.0.0.1 at 2011-06-10 19:17:32 -0700
+  Processing by LocationsController#meta_info as XML
+Rendered locations/meta_info.xml (0.9ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/metainfo" for 127.0.0.1 at 2011-06-10 19:19:06 -0700
+  Processing by LocationsController#meta_info as XML
+Rendered locations/meta_info.xml (0.9ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?keyword=Ed.IX+4.28&start=1&end=5000" for 127.0.0.1 at 2011-06-10 19:19:14 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Ed.IX 4.28", "start"=>"1", "end"=>"5000"}
+  [1m[36mCampus Load (79.9ms)[0m  [1mSELECT * from campus where name = '4.28'[0m
+Rendered locations/search.xml.builder (40.0ms)
+Completed 200 OK in 234ms (Views: 56.4ms | ActiveRecord: 79.9ms)
+
+
+Started GET "/search?keyword=Ed.IX+4.28&start=1&end=5000" for 127.0.0.1 at 2011-06-10 19:19:18 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Ed.IX 4.28", "start"=>"1", "end"=>"5000"}
+  [1m[35mCampus Load (0.4ms)[0m  SELECT * from campus where name = '4.28'
+Rendered locations/search.xml.builder (6.6ms)
+Completed 200 OK in 37ms (Views: 15.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/search?keyword=Ed.IX+4.28&start=1&end=5000" for 127.0.0.1 at 2011-06-10 19:19:45 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Ed.IX 4.28", "start"=>"1", "end"=>"5000"}
+  [1m[36mCampus Load (0.2ms)[0m  [1mSELECT * from campus where name = '4.28'[0m
+Rendered locations/search.xml.builder (8.5ms)
+Completed 200 OK in 91ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/search?keyword=Ed.II&start=1&end=5000" for 127.0.0.1 at 2011-06-10 19:19:51 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Ed.II", "start"=>"1", "end"=>"5000"}
+  [1m[35mCampus Load (3.0ms)[0m  SELECT * from campus where name = 'Ed.II'
+  [1m[36mCampus Columns (24.7ms)[0m  [1mSHOW FIELDS FROM `campus`[0m
+Rendered locations/search.xml.builder (7.1ms)
+Completed 200 OK in 65ms (Views: 17.4ms | ActiveRecord: 27.6ms)
+
+
+Started GET "/geolocation/specific?&building=Ed.II" for 127.0.0.1 at 2011-06-10 19:19:51 -0700
+  Processing by LocationsController#specific as XML
+  Parameters: {"building"=>"Ed.II"}
+  [1m[35mCampus Columns (1.2ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mSQL (232.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mcampus Columns (1.5ms)[0m  SHOW FIELDS FROM `campus`
+  [1m[36mCampus Load (2.7ms)[0m  [1mSELECT `campus`.* FROM `campus` WHERE `campus`.`name` = 'Ed.II' LIMIT 1[0m
+Rendered locations/specific.xml.builder (8.8ms)
+Completed 200 OK in 992ms (Views: 40.5ms | ActiveRecord: 238.0ms)
+
+
+Started GET "/search?keyword=Ed.II+3.2&start=1&end=5000" for 127.0.0.1 at 2011-06-10 19:20:25 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Ed.II 3.2", "start"=>"1", "end"=>"5000"}
+  [1m[35mCampus Load (0.9ms)[0m  SELECT * from campus where name = '3.2'
+Rendered locations/search.xml.builder (7.3ms)
+Completed 200 OK in 28ms (Views: 12.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/search?keyword=Ed.II+3.12&start=1&end=5000" for 127.0.0.1 at 2011-06-10 19:20:44 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Ed.II 3.12", "start"=>"1", "end"=>"5000"}
+  [1m[36mCampus Load (0.6ms)[0m  [1mSELECT * from campus where name = '3.12'[0m
+Rendered locations/search.xml.builder (6.1ms)
+Completed 200 OK in 26ms (Views: 11.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/search?keyword=ed.ii+3.12" for 127.0.0.1 at 2011-06-10 19:20:55 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed.ii 3.12"}
+  [1m[35mCampus Load (0.5ms)[0m  SELECT * from campus where name = '3.12'
+Rendered locations/search.xml.builder (7.1ms)
+Completed 200 OK in 93ms (Views: 12.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/search?keyword=ed.iv+4.18" for 127.0.0.1 at 2011-06-10 19:21:21 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed.iv 4.18"}
+  [1m[36mCampus Load (1.7ms)[0m  [1mSELECT * from campus where name = '4.18'[0m
+Rendered locations/search.xml.builder (11.5ms)
+Completed 200 OK in 48ms (Views: 19.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/search?keyword=ed.ix+4.18" for 127.0.0.1 at 2011-06-10 19:21:26 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed.ix 4.18"}
+  [1m[35mCampus Load (8.7ms)[0m  SELECT * from campus where name = '4.18'
+Rendered locations/search.xml.builder (7.2ms)
+Completed 200 OK in 50ms (Views: 13.0ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/search?keyword=ed.ix+4.28" for 127.0.0.1 at 2011-06-10 19:21:30 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed.ix 4.28"}
+  [1m[36mCampus Load (0.3ms)[0m  [1mSELECT * from campus where name = '4.28'[0m
+Rendered locations/search.xml.builder (16.7ms)
+Completed 200 OK in 37ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/search?keyword=ed.departamental+451" for 127.0.0.1 at 2011-06-10 19:22:24 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed.departamental 451"}
+  [1m[35mCampus Load (1.7ms)[0m  SELECT * from campus where name = '451'
+Rendered locations/search.xml.builder (6.8ms)
+Completed 200 OK in 33ms (Views: 15.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/search?keyword=Ed.X+3.17&start=1&end=5000" for 127.0.0.1 at 2011-06-10 19:22:39 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Ed.X 3.17", "start"=>"1", "end"=>"5000"}
+  [1m[36mCampus Load (0.8ms)[0m  [1mSELECT * from campus where name = '3.17'[0m
+Rendered locations/search.xml.builder (8.6ms)
+Completed 200 OK in 72ms (Views: 13.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/search?keyword=Ed.Departamental+202&start=1&end=5000" for 127.0.0.1 at 2011-06-10 19:32:59 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"Ed.Departamental 202", "start"=>"1", "end"=>"5000"}
+  [1m[35mCampus Load (21.6ms)[0m  SELECT * from campus where name = '202'
+Rendered locations/search.xml.builder (10.6ms)
+Completed 200 OK in 123ms (Views: 28.5ms | ActiveRecord: 21.6ms)
