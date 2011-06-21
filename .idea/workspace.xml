@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1e108e-f3c5-4983-9eb6-416644238516" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml.orig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/geolocation_service.iml" afterPath="$PROJECT_DIR$/.idea/geolocation_service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/locations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/locations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/locations/meta_info.xml" afterPath="$PROJECT_DIR$/app/views/locations/meta_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="geolocation_service.iws" />
@@ -44,7 +39,7 @@
       <file leaf-file-name="locations_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="38" selection-start="3763" selection-end="3763" vertical-scroll-proportion="0.23006135">
+            <state line="147" column="0" selection-start="3811" selection-end="3811" vertical-scroll-proportion="0.09202454">
               <folding />
             </state>
           </provider>
@@ -643,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/locations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="38" selection-start="3763" selection-end="3763" vertical-scroll-proportion="0.23006135">
+        <state line="147" column="0" selection-start="3811" selection-end="3811" vertical-scroll-proportion="0.09202454">
           <folding />
         </state>
       </provider>

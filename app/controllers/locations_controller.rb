@@ -145,7 +145,9 @@ class LocationsController < ApplicationController
 
     if (room == nil)
       office = building;
-      @locations = Campus.find_by_sql(["SELECT * from campus where name like ?", "%"+building.strip+"%"])
+
+        @locations = Campus.find_by_sql(["SELECT * from campus where name like ?", "%"+building.strip+"%"])
+
     else
 
       case building
