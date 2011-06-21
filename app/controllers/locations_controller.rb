@@ -23,7 +23,7 @@ class LocationsController < ApplicationController
     require 'cgi'
 
   #  @file_name = args[:nome_file]
-
+    puts file_name
     File.new(file_name.to_s+".kml", "w+")
 
     @file = File.open("public/kmlTrunk/" + file_name.to_s+".kml", "w+")
@@ -100,41 +100,72 @@ class LocationsController < ApplicationController
 
     keyarray = @keyword.to_s.split(' ')
 
-    building = keyarray[0]
-    room = keyarray[1]
-    #if there are three arguments
-    if keyarray[2] != nil
-      building = "ED." + keyarray[1].upcase
-      room = keyarray[2].upcase
-    else
-      if (keyarray[0].upcase == "EDIFICIO" || keyarray[0].upcase == "EDIFÍCIO" || keyarray[0].upcase == "EDIFíCIO" || keyarray[0].upcase == "ED")
-        building = "ED." + keyarray[1].upcase
-        room = nil
-      end
+    case keyarray.length
+      when 1
+        building = keyarray[0]
+      when 2
+        if (keyarray[0].upcase.include? "ED")
+          if (keyarray[0].include? ".")
+            building = "ED." + keyarray[0].rpartition(".")[2].upcase
+            room = keyarray[1]
+
+            if (room == "departamental")
+              building="departamental"
+              room = nil
+            end
+
+          else
+              building = keyarray[1].upcase
+              room = nil
+          end
+        end
+      when 3
+        if (keyarray[0].upcase == "EDIFICIO" || keyarray[0].upcase == "EDIFÍCIO" || keyarray[0].upcase == "EDIFíCIO" || keyarray[0].upcase == "ED" || keyarray[0].upcase == "ED.")
+          building = "ED." + keyarray[1].upcase
+          room = keyarray[2].upcase
+        end
+      else
+        @locations = []
     end
+
+  #  building = keyarray[0]
+  #  room = keyarray[1]
+    #if there are three arguments
+  #  if keyarray[2] != nil
+   #   building = "ED." + keyarray[1].upcase
+   #   room = keyarray[2].upcase
+   # else
+   #   if (keyarray[0].upcase == "EDIFICIO" || keyarray[0].upcase == "EDIFÍCIO" || keyarray[0].upcase == "EDIFíCIO" || keyarray[0].upcase == "ED" || keyarray[0].upcase == "ED.")
+   #     building = "ED." + keyarray[1].upcase
+   #     room = nil
+   #   end
+   # end
+   if (room != nil || building != nil)
+
 
     if (room == nil)
       office = building;
-      @locations = Campus.find_by_sql(["SELECT * from campus where name = ?", building])
+      @locations = Campus.find_by_sql(["SELECT * from campus where name like ?", "%"+building.strip+"%"])
     else
+
       case building
         when "ED.I"
-          @locations = Edi.find_by_sql(["SELECT * from edis where name = ?", room ])
+          @locations = Edi.find_by_sql(["SELECT * from edis where name like ?", "%"+room.strip+"%" ])
         when "ED.II"
-          @locations = Edii.find_by_sql(["SELECT * from ediis where name = ?", room ])
+          @locations = Edii.find_by_sql(["SELECT * from ediis where name like ?", "%"+room.strip+"%" ])
         when "ED.III"
-          @locations = Ediii.find_by_sql(["SELECT * from ediiis where name = ?", room ])
+          @locations = Ediii.find_by_sql(["SELECT * from ediiis where name like ?", "%"+room.strip+"%" ])
         when "ED.IV"
-          @locations = Ediv.find_by_sql(["SELECT * from edivs where name = ?", room ])
+          @locations = Ediv.find_by_sql(["SELECT * from edivs where name like ?", "%"+room.strip+"%" ])
         when "CAMPUS"
-          @locations = Campus.find_by_sql(["SELECT * from campus where name = ?", room ])
+          @locations = Campus.find_by_sql(["SELECT * from campus where name like ?", "%"+room.strip+"%" ])
         when "CITI"
-          @locations = Citi.find_by_sql(["SELECT * from citis where name = ?", room ])
+          @locations = Citi.find_by_sql(["SELECT * from citis where name like ?", "%"+room.strip+"%" ])
         else
-          @locations = Campus.find_by_sql(["SELECT * from campus where name = ?", room ])
+          @locations = Campus.find_by_sql(["SELECT * from campus where name like ?", "%"+room.strip+"%" ])
       end
     end
-
+    end
     @list = []
     counter = 1
 

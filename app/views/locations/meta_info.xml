@@ -1,4 +1,4 @@
-<service name="geolocation" url="<%=@address%>">
+<service name="GeoFCT" url="<%=@address%>">
     <provider>G6</provider>
     <serviceID>geo</serviceID>
     <type>map</type>
@@ -15,7 +15,7 @@
 
     <informedEntities>
       <entity>room</entity>
-		<entity>building</entity>
+	  <entity>building</entity>
     </informedEntities>
     <competences>
     <competence path="/index" httpOp="">
