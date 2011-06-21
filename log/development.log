@@ -7098,3 +7098,92 @@ Started GET "/search?keyword=ed+ii" for 127.0.0.1 at 2011-06-21 12:42:31 -0700
   [1m[35mCampus Columns (1012.6ms)[0m  SHOW FIELDS FROM `campus`
 Rendered locations/search.xml.builder (414.8ms)
 Completed 200 OK in 1626ms (Views: 487.9ms | ActiveRecord: 1068.2ms)
+
+
+Started GET "/search?keyword=ed+ii" for 127.0.0.1 at 2011-06-21 12:47:14 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii"}
+  [1m[36mCampus Load (0.9ms)[0m  [1mSELECT * from campus where name like '%II%'[0m
+  [1m[35mCampus Columns (1.6ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (30.6ms)
+Completed 200 OK in 136ms (Views: 45.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/search?keyword=ed+ii" for 127.0.0.1 at 2011-06-21 12:47:27 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii"}
+  [1m[36mCampus Load (0.4ms)[0m  [1mSELECT * from campus where name like '%II%'[0m
+  [1m[35mCampus Columns (1.5ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (58.3ms)
+Completed 200 OK in 227ms (Views: 121.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/search?keyword=ed+ii+128" for 127.0.0.1 at 2011-06-21 12:48:13 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii 128"}
+  [1m[36mEdii Load (4.2ms)[0m  [1mSELECT * from ediis where name like '%128%'[0m
+  [1m[35mEdii Columns (19.0ms)[0m  SHOW FIELDS FROM `ediis`
+Rendered locations/search.xml.builder (11.5ms)
+Completed 200 OK in 73ms (Views: 18.1ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/search?keyword=ed+ii+128" for 127.0.0.1 at 2011-06-21 12:55:53 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii 128"}
+  [1m[36mEdii Load (478.8ms)[0m  [1mSELECT * from ediis where name like '%128%'[0m
+  [1m[35mEdii Columns (2756.8ms)[0m  SHOW FIELDS FROM `ediis`
+Rendered locations/search.xml.builder (308.9ms)
+Completed 200 OK in 5047ms (Views: 1304.8ms | ActiveRecord: 3235.6ms)
+
+
+Started GET "/search?keyword=ed+ii" for 127.0.0.1 at 2011-06-21 12:56:42 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii"}
+  [1m[36mCampus Load (104.6ms)[0m  [1mSELECT * from campus where name like '%II%'[0m
+  [1m[35mCampus Columns (285.0ms)[0m  SHOW FIELDS FROM `campus`
+Completed   in 660ms
+
+NameError (undefined local variable or method `lotion' for #<LocationsController:0x9e9678c>):
+  app/controllers/locations_controller.rb:180:in `block in search'
+  app/controllers/locations_controller.rb:174:in `each'
+  app/controllers/locations_controller.rb:174:in `search'
+
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (218.5ms)
+Rendered /home/alaxid/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (274.1ms)
+
+
+Started GET "/search?keyword=ed+ii" for 127.0.0.1 at 2011-06-21 12:57:03 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii"}
+  [1m[36mCampus Load (852.4ms)[0m  [1mSELECT * from campus where name like '%II%'[0m
+  [1m[35mCampus Columns (1617.9ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (11.2ms)
+Completed 200 OK in 3159ms (Views: 445.2ms | ActiveRecord: 2859.9ms)
+
+
+Started GET "/search?keyword=ed+ii" for 127.0.0.1 at 2011-06-21 12:59:15 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii"}
+  [1m[36mCampus Load (51.6ms)[0m  [1mSELECT * from campus where name like '%II%'[0m
+  [1m[35mCampus Columns (160.3ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (20.1ms)
+Completed 200 OK in 427ms (Views: 77.3ms | ActiveRecord: 211.9ms)
+
+
+Started GET "/search?keyword=ed+ii" for 127.0.0.1 at 2011-06-21 13:00:20 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii"}
+  [1m[36mCampus Load (50.6ms)[0m  [1mSELECT * from campus where name like '%II%'[0m
+  [1m[35mCampus Columns (148.7ms)[0m  SHOW FIELDS FROM `campus`
+Rendered locations/search.xml.builder (26.3ms)
+Completed 200 OK in 372ms (Views: 78.3ms | ActiveRecord: 199.3ms)
+
+
+Started GET "/search?keyword=ed+ii%20128" for 127.0.0.1 at 2011-06-21 13:00:35 -0700
+  Processing by LocationsController#search as XML
+  Parameters: {"keyword"=>"ed ii 128"}
+  [1m[36mEdii Load (0.7ms)[0m  [1mSELECT * from ediis where name like '%128%'[0m
+  [1m[35mEdii Columns (13.5ms)[0m  SHOW FIELDS FROM `ediis`
+Rendered locations/search.xml.builder (34.5ms)
+Completed 200 OK in 265ms (Views: 67.0ms | ActiveRecord: 14.2ms)

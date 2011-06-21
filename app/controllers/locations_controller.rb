@@ -176,7 +176,7 @@ class LocationsController < ApplicationController
       	location.description = building + " " + location.name
         location.name = building + "&room=" + location.name
     	else
-        location.description = building
+        location.description = location.name
     	end
       if counter >= @start.to_i then
         @list << location
